@@ -1,0 +1,127 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:white;
+}
+.container{
+    position: relative;
+}
+.options{
+    position: absolute;
+    top:20px;
+    left:440px;
+    align-items: center;   
+    font-family: 'Lato', sans-serif;
+    font-family: 'Sriracha', cursive;
+}
+.up1, .up2, .down1, .down2
+{
+    display: none;
+    vertical-align: center;
+}
+.up{
+    color:green;
+}
+.down{
+    color:red;
+}
+.playerOne, .playerTwo{
+    display: inline-block;
+    font-size: 35px;
+    margin:25px;
+    padding:5px;
+    text-shadow: 5px 5px 10px black;
+}
+.Draw{
+    display:none;
+    font-size: 55px;
+    margin:20px;
+    margin-left: 130px;
+    padding:5px;
+    position: absolute;
+    top:20px;
+    left:440px;
+    align-items: center;   
+    font-family: 'Lato', sans-serif;
+    font-family: 'Sriracha', cursive;
+    text-shadow: 5px 5px 10px black;
+}
+
+.boxes{
+    position: absolute;
+    top:130px;
+    left:400px;
+    width:500px;
+    height: 300px;
+}
+.box{
+    text-align: center;
+    padding-bottom: 15px;
+    width:150px;
+    height: 150px;
+    margin:5px;
+    background-color:rgb(155, 82, 82);
+    box-shadow: 8px 8px 18px black;
+    border-radius: 10px;
+    float: left;
+    font-size: 100px;
+    color:black;
+    font-family: 'Sriracha', cursive;
+}
+.box:hover{
+    background-color: rgb(216, 155, 155);
+}
+@media screen and (max-width:1200px)
+{
+    .options{
+        left:350px;
+    }
+    .playerOne, .playerTwo{
+        font-size: 30px;
+        margin:20px;
+    }
+    .boxes{
+        left:350px;
+        width:340px;
+    }
+    .box{
+        width:100px;
+        height: 100px;
+        font-size: 70px;
+    }
+}
+@media screen and (max-width:850px)
+{
+    .options{
+        left:230px;
+    }
+    .boxes{
+        left:230px;
+        width:340px;
+    }
+}
+@media screen and (max-width:700px)
+{
+    .options{
+        left:100px;
+    }
+    .playerOne, .playerTwo{
+        font-size: 25px;
+        margin:15px;
+    }
+    .boxes{
+        left:110px;
+        width:250px;
+    }
+    .box{
+        width:70px;
+        height: 70px;
+        font-size: 50px;
+    }
+}
